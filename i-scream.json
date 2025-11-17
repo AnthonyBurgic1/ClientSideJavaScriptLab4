@@ -23,18 +23,18 @@
       "ingredients": ["Strawberries", "Sugar", "Milk", "Cream"]
     },
     {
-      "name": "Minty Blast",
+      "name": "Peach Mango",
       "calories": 150,
       "type": "special",
-      "image": "images/mint.png",
-      "ingredients": ["Mint", "Chocolate Chips", "Milk", "Cream"]
+      "image": "peach-mango copy.svg",
+      "ingredients": ["peach", "mango", "Milk", "Cream"]
     },
     {
-      "name": "Caramel Crunch",
+      "name": "Green tea bliss",
       "calories": 300,
       "type": "limited",
-      "image": "images/caramel.png",
-      "ingredients": ["Caramel", "Toffee Bits", "Cream", "Sugar"]
+      "image": "ice-cream-xtra1.svg",
+      "ingredients": ["green teal", "mint", "Cream", "Sugar"]
     }
   ]
 }
