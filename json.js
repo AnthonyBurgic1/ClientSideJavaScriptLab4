@@ -101,7 +101,7 @@ function showTopFlavors(jsonObj) {
             li.textContent = ingredients[j];
             ul.appendChild(li);
         }
-        
+
     // STEP 10h: Append each of the above HTML elements to the ARTICLE element
         article.appendChild(h2);
         article.appendChild(p);
@@ -112,3 +112,8 @@ function showTopFlavors(jsonObj) {
         section.appendChild(article);
     };
 };
+// STEP 11: The instructor will edit the JSON file - refresh your page to see the updated content
+
+// STEP 12: Change the URL in STEP 3 to point to the JSON file in the local /js folder in order to prepare for today's lab
+
+// This page inspired by and adapted from https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/JSON
