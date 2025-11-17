@@ -1,40 +1,40 @@
 {
-  "companyName": "iScream Ice Cream Co.",
+  "companyName": "iScream Ice Cream",
   "topFlavors": [
     {
       "name": "Vanilla Dream",
       "calories": 180,
-      "image": "images/vanilla.png",
       "type": "classic",
+      "image": "images/vanilla.png",
       "ingredients": ["Milk", "Cream", "Sugar", "Vanilla Extract"]
     },
     {
-      "name": "Chocolate Thunder",
+      "name": "Chocolate Mint",
       "calories": 260,
-      "image": "images/chocolate.png",
       "type": "premium",
-      "ingredients": ["Milk", "Cocoa", "Cream", "Sugar"]
+      "image": "chocolate-mint copy.svg",
+      "ingredients": ["Milk", "Cocoa", "Mint", "Sugar"]
     },
     {
       "name": "Strawberry Burst",
       "calories": 220,
-      "image": "images/strawberry.png",
       "type": "classic",
-      "ingredients": ["Milk", "Strawberries", "Cream", "Sugar"]
+      "image": "strawberry-sprinkle copy.svg",
+      "ingredients": ["Strawberries", "Sugar", "Milk", "Cream"]
     },
     {
-      "name": "Mint Blizzard",
+      "name": "Minty Blast",
       "calories": 150,
-      "image": "images/mint.png",
       "type": "special",
-      "ingredients": ["Milk", "Mint", "Sugar", "Chocolate Chips"]
+      "image": "images/mint.png",
+      "ingredients": ["Mint", "Chocolate Chips", "Milk", "Cream"]
     },
     {
-      "name": "Salted Caramel Swirl",
-      "calories": 310,
-      "image": "images/caramel.png",
+      "name": "Caramel Crunch",
+      "calories": 300,
       "type": "limited",
-      "ingredients": ["Milk", "Cream", "Caramel", "Sea Salt"]
+      "image": "images/caramel.png",
+      "ingredients": ["Caramel", "Toffee Bits", "Cream", "Sugar"]
     }
   ]
 }
