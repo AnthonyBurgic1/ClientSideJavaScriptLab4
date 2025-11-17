@@ -1,0 +1,40 @@
+{
+  "companyName": "iScream Ice Cream Co.",
+  "topFlavors": [
+    {
+      "name": "Vanilla Dream",
+      "calories": 180,
+      "image": "images/vanilla.png",
+      "type": "classic",
+      "ingredients": ["Milk", "Cream", "Sugar", "Vanilla Extract"]
+    },
+    {
+      "name": "Chocolate Thunder",
+      "calories": 260,
+      "image": "images/chocolate.png",
+      "type": "premium",
+      "ingredients": ["Milk", "Cocoa", "Cream", "Sugar"]
+    },
+    {
+      "name": "Strawberry Burst",
+      "calories": 220,
+      "image": "images/strawberry.png",
+      "type": "classic",
+      "ingredients": ["Milk", "Strawberries", "Cream", "Sugar"]
+    },
+    {
+      "name": "Mint Blizzard",
+      "calories": 150,
+      "image": "images/mint.png",
+      "type": "special",
+      "ingredients": ["Milk", "Mint", "Sugar", "Chocolate Chips"]
+    },
+    {
+      "name": "Salted Caramel Swirl",
+      "calories": 310,
+      "image": "images/caramel.png",
+      "type": "limited",
+      "ingredients": ["Milk", "Cream", "Caramel", "Sea Salt"]
+    }
+  ]
+}
