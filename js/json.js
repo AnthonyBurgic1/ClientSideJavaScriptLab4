@@ -13,7 +13,8 @@ async function populate() {
     const request = new Request(requestURL);
 
     // STEP 6: Make a network request
-    const response = await fetch(request);
+    const requestURL = 'data/i-scream.json';
+
 
     // STEP 7: Convert to JSON
     const jsonObj = await response.json();
