@@ -6,17 +6,16 @@ const section = document.querySelector('section');
 // STEP 3a: Create the asynchronous function populate()
 async function populate() {
 
-    // STEP 4: Store the URL of a JSON file in a variable
-    const requestURL = 'https://github.com/AnthonyBurgic1/ClientSideJavaScriptLab4/blob/main/js/i-scream.json';
+    // STEP 4: Store the URL of a JSON file in a variable (RAW GitHub!)
+    const requestURL = 'https://raw.githubusercontent.com/AnthonyBurgic1/ClientSideJavaScriptLab4/main/js/i-scream.json';
 
-    // STEP 5: Use the new URL to create a new request object
+    // STEP 5: Create the request object
     const request = new Request(requestURL);
 
     // STEP 6: Make a network request
-    const requestURL = 'data/i-scream.json';
+    const response = await fetch(request);
 
-
-    // STEP 7: Convert to JSON
+    // STEP 7: Convert the response to JSON
     const jsonObj = await response.json();
 
     console.log(jsonObj);
@@ -64,7 +63,7 @@ function showTopFlavors(jsonObj) {
         img.src = topFlavors[i].image;
         img.alt = topFlavors[i].name;
 
-        // Set calorie color
+        // Calorie color coding
         if (topFlavors[i].calories < 200) {
             p.style.color = "green";
         } else if (topFlavors[i].calories <= 280) {
@@ -73,18 +72,14 @@ function showTopFlavors(jsonObj) {
             p.style.color = "red";
         }
 
-        // Backgrounds by type
-        const type = topFlavors[i].type;
-        article.dataset.type = type;
-
+        // Background color by type
         const typeColors = {
             classic: "#e6f7ff",
             premium: "#fff4cc",
             limited: "#ffe6f2",
             special: "#f3e8ff"
         };
-
-        article.style.background = typeColors[type] || "#ffffff";
+        article.style.background = typeColors[topFlavors[i].type] || "#ffffff";
 
         // Ingredients
         const ingredients = topFlavors[i].ingredients;
