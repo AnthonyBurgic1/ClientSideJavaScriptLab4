@@ -7,7 +7,7 @@ const section = document.querySelector('section');
 async function populate() {
 
     // STEP 4: Store the URL of a JSON file in a variable
-    const requestURL = 'https://raw.githubusercontent.com/AnthonyBurgic1/ClientSideJavaScriptLab4/main/i-scream.json';
+    const requestURL = 'https://github.com/AnthonyBurgic1/ClientSideJavaScriptLab4/blob/main/i-scream.json?raw=true';
 
     // STEP 5: Use the new URL to create a new request object
     const request = new Request(requestURL);
