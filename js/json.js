@@ -9,21 +9,21 @@ async function populate() {
     // STEP 4: Store the URL of a JSON file in a variable (RAW GitHub!)
     const requestURL = 'https://raw.githubusercontent.com/AnthonyBurgic1/ClientSideJavaScriptLab4/main/js/i-scream.json';
 
-    // STEP 5: Create the request object
+    // STEP 5: Create the request object \\ 
     const request = new Request(requestURL);
 
-    // STEP 6: Make a network request
+    // STEP 6: Make a network request \\ 
     const response = await fetch(request);
 
-    // STEP 7: Convert the response to JSON
+    // STEP 7: Convert the response to JSON \\ 
     const jsonObj = await response.json();
 
     console.log(jsonObj);
 
-    // STEP 9a: Populate header
+    // STEP 9a: Populate header \\ 
     populateHeader(jsonObj);
 
-    // STEP 10a: Populate flavors
+    // STEP 10a: Populate flavors \\ 
     showTopFlavors(jsonObj);
 };
 
@@ -53,18 +53,18 @@ function showTopFlavors(jsonObj) {
         const ul = document.createElement('ul');
         const img = document.createElement('img');
 
-        // Name
+        // Name \\ 
         h2.textContent = topFlavors[i].name;
 
-        // Calories
+        // Calories \\ 
         p.textContent = `Calories: ${topFlavors[i].calories}`;
 
-        // Images
+        // Images \\ 
         const img = document.createElement('img');
         img.src = topFlavors[i].image;
         img.alt = topFlavors[i].name;
 
-        // Calorie color coding
+        // Calorie color coding \\ 
         if (topFlavors[i].calories < 200) {
             p.style.color = "green";
         } else if (topFlavors[i].calories <= 280) {
@@ -73,7 +73,7 @@ function showTopFlavors(jsonObj) {
             p.style.color = "red";
         }
 
-        // Background color by type
+        // Background color by type \\ 
         const typeColors = {
             classic: "#e6f7ff",
             premium: "#fff4cc",
@@ -82,7 +82,7 @@ function showTopFlavors(jsonObj) {
         };
         article.style.background = typeColors[topFlavors[i].type] || "#ffffff";
 
-        // Ingredients
+        // Ingredients \\ 
         const ingredients = topFlavors[i].ingredients;
         for (let j = 0; j < ingredients.length; j++) {
             const li = document.createElement('li');
@@ -90,6 +90,7 @@ function showTopFlavors(jsonObj) {
             ul.appendChild(li);
         }
 
+        // APPEND ELEMENTS TO ARTICLE \\ 
         article.appendChild(h2);
         article.appendChild(p);
         article.appendChild(img);
