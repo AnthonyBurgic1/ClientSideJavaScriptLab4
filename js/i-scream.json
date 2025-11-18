@@ -2,13 +2,6 @@
   "companyName": "iScream Ice Cream",
   "topFlavors": [
     {
-      "name": "Vanilla Dream",
-      "calories": 180,
-      "type": "classic",
-      "image": "images/vanilla.png",
-      "ingredients": ["Milk", "Cream", "Sugar", "Vanilla Extract"]
-    },
-    {
       "name": "Chocolate Mint",
       "calories": 260,
       "type": "premium",
