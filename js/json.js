@@ -60,7 +60,6 @@ function showTopFlavors(jsonObj) {
         p.textContent = `Calories: ${topFlavors[i].calories}`;
 
         // Images \\ 
-        const img = document.createElement('img');
         img.src = topFlavors[i].image;
         img.alt = topFlavors[i].name;
 
