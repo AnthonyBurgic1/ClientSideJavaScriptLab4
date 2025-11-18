@@ -5,28 +5,28 @@
       "name": "Chocolate Mint",
       "calories": 260,
       "type": "premium",
-      "image": "..images/chocolate-mint copy.svg",
+      "image": "images/chocolate-mint copy.svg",
       "ingredients": ["Milk", "Cocoa", "Mint", "Sugar"]
     },
     {
       "name": "Strawberry Burst",
       "calories": 220,
       "type": "classic",
-      "image": "..images/strawberry-burst copy.svg",
+      "image": "images/strawberry-burst copy.svg",
       "ingredients": ["Strawberries", "Sugar", "Milk", "Cream"]
     },
     {
       "name": "Peach Mango",
       "calories": 150,
       "type": "special",
-      "image": "..images/peach-mango copy.svg",
+      "image": "images/peach-mango copy.svg",
       "ingredients": ["peach", "mango", "Milk", "Cream"]
     },
     {
       "name": "Green tea bliss",
       "calories": 300,
       "type": "limited",
-      "image": "..images/ice-cream-xtra1.svg",
+      "image": "images/ice-cream-xtra1.svg",
       "ingredients": ["green teal", "mint", "Cream", "Sugar"]
     }
   ]
